@@ -9,8 +9,9 @@ import { getApiConfiguration } from "./store/homeSlice";
 import { fetchDataFromApi } from "./utils/api";
 import { Details } from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/SearchResult";
+
 import { PageNotFound } from "./pages/404/pageNotFound";
-// import { Explore } from "./pages/explore/explore";
+
 import Explore from "./pages/explore/explore";
 import Footer from "./components/footer/Footer";
 import { getGenres } from "./store/homeSlice";
@@ -71,7 +72,7 @@ function App() {
         <Route path="/Movix/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
         <Route path="/Movix/explore/:mediaType" element={<Explore />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="/" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
