@@ -63,7 +63,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Movix" element={<Home />} />
+        <Route path="/Movix/" element={<Home />} />
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/Movix/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
