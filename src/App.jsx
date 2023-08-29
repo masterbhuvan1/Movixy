@@ -61,16 +61,16 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Home />
+      {/* <Home /> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Movix/" element={<Home />} />
+        <Route path="/Movixy/" element={<Home />} />
         <Route path="/:mediaType/:id" element={<Details />} />
-        <Route path="/Movix/:mediaType/:id" element={<Details />} />
+        <Route path="/Movixy/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
-        <Route path="/Movix/search/:query" element={<SearchResult />} />
+        <Route path="/Movixy/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
-        <Route path="/Movix/explore/:mediaType" element={<Explore />} />
+        <Route path="/Movixy/explore/:mediaType" element={<Explore />} />
         {/* <Route path="/" element={<PageNotFound />} /> */}
       </Routes>
       <Footer />
